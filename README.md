@@ -8,8 +8,8 @@ A página tem como propósito compartilhar informações e artigos sobre gatos, 
 ## Funcionalidades
 
 
-- Links para Redes Sociais**: Integração com perfis de redes sociais para compartilhamento e interação.
-- Design Responsivo**: Adaptação do layout para diferentes tamanhos de tela, garantindo uma boa experiência em dispositivos móveis.
+- Links para Redes Sociais: Integração com perfis de redes sociais para compartilhamento e interação.
+- Design Responsivo: Adaptação do layout para diferentes tamanhos de tela, garantindo uma boa experiência em dispositivos móveis.
 
 
 
