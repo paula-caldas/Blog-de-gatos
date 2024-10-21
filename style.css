@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Mulish", sans-serif;
+
+--color-base-white: hsl(0, 0%, 100%);
+--color-base-black: hsl(0, 0%, 12%);
+--color-base-blue-100: hsl(195, 46%, 40%);
+--color-base-blue-300: hsl(195, 91%, 25%);
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+header {
+  display: flex;
+  background: var(--color-base-blue-300);
+  width: 100%;
+  align-items: center;
+  gap: 2.6rem;
+  padding: 1.6rem 2.8rem 1.6rem 2.8rem;
+}
+
+.logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+ header p {
+  background: var(--color-base-blue-100);
+  width: 100%;
+  height: 4rem;
+  border-radius: .4rem;
+  color: var(--color-base-white);
+  padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  align-content: center;
+  box-shadow: 1px 1px 1px black;
+ }
+
+
+.avatar {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.gato-mobile {
+  width: 100dvw;
+}
+
+.gato-desktop {
+  display: none;
+}
+
+
+
+.content {
+  padding: 3.2rem 2.6rem 3.4rem 2.6rem
+}
+
+.post h1 {
+  color: var(--color-base-black);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 160%;
+  margin-bottom: .8rem;
+}
+
+#evaluation {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 3.2rem;
+}
+
+ button {
+  background: var(--color-base-blue-300);
+  border: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  align-content: center;
+  cursor: pointer;
+}
+
+ button:hover {
+  transform: scale(1.1);
+  
+}
+
+
+
+.post p {
+  color: var(--color-base-black);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.articles {
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  display: grid;
+  grid-template-rows: repeat(5 1fr);
+  gap: 3.2rem;
+}
+
+.articles h1 {
+color: var(--color-base-black);
+font-size: 2.4rem;
+line-height: 160%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  max-height: fit-content;
+}
+
+.item img {
+  aspect-ratio: 16/9;
+  width: 15rem;
+  object-fit: cover;
+  border-radius: .5rem;
+}
+
+.item img:hover {
+  filter: hue-rotate(12deg) contrast(101%) saturate(150%);
+  transform: scale(1.1);
+  
+}
+
+.articles h2 {
+color: var(--color-base-black);
+font-size: 1.8rem;
+line-height: 160%;
+}
+
+.articles p {
+  color: var(--color-base-black);
+  font-size: 1.4rem;
+  line-height: 160%;
+}
+
+footer {
+  background-color: var(--color-base-blue-300);
+  width: 100%;
+}
+
+footer p {
+  color: var(--color-base-white);
+  text-align: center;
+  padding: 2.6rem;
+  margin-top:4rem;
+
+}
+
+
+
+
+@media (min-width: 1120px) {
+  body {
+    background: #F4FCFF;
+  }
+  main {
+  display: flex;
+  padding: 4.4rem  11rem 4.4rem 11rem;
+  justify-content: center;
+
+  }
+ 
+  header {
+    padding: 1.6rem 11.2rem 1.6rem 11.2rem ;
+  }
+
+.gato-desktop {
+  display: block;
+  width: 50dvw;
+}
+
+.gato-mobile {
+  display: none;
+}
+
+.content {
+  padding: 0;
+}
+
+.post {
+  margin-right: 3.4rem;
+}
+
+.desktop-model {
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  display: flex;
+  gap: clamp(2rem, 36.6rem, 20dvw);
+  padding: 0;
+  height: 4rem;
+}
+
+
+.post p {
+  font-size: 1.6rem;
+  line-height: 160%;
+  width: 50dvw;
+}
+
+.articles {
+  margin: 0;
+  padding: 0;
+  gap: 3.2rem;
+  width: 40dvw;
+}
+
+
+ }
